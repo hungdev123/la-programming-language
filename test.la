@@ -1,0 +1,82 @@
+# Basic values
+đặt a = 10
+đặt b = 20
+đặt text = "năm nay tôi "
+đặt age = 30
+đặt truth = đúng
+đặt falsy = sai
+
+# Print basic values
+in a
+in b
+in text
+in age
+in truth
+in falsy
+
+# Math and comparison
+in a + b
+in b - a
+in a * 2
+in b / 2
+
+nếu a < b
+  in "a nhỏ hơn b"
+nếu a = 10
+  in "a bằng 10"
+nếu không
+  in "điều kiện khác"
+kết
+
+# String concat
+in "Hello, " + text + "tuổi"
+
+# Lists
+đặt nums = [1, 2, 3]
+thêm 4 tại nums
+thêm 0 tại nums ở 0
+liệt kê nums
+in độ dài của nums
+
+# Functions
+tạo hello
+  in "xin chào từ hàm"
+kết
+
+hello
+
+tạo inc_sum
+  đặt sum = sum + 1
+kết
+
+đặt sum = 0
+inc_sum
+inc_sum
+in sum
+
+# Return and break
+đặt j = 0
+lặp 10
+  nếu j = 3
+    dừng
+  kết
+  in j
+  đặt j = j + 1
+kết
+
+# Loop with condition
+đặt x = 0
+lặp 100 đến x = 5
+  in x
+  đặt x = x + 1
+kết
+
+# Nested if/elif/else
+đặt n = 2
+nếu n = 1
+  in "một"
+nếu n = 2
+  in "hai"
+nếu không
+  in "khác"
+kết
