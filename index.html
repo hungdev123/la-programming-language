@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lá — Ngôn ngữ lập trình thân thiện cho người Việt</title>
+    <!-- Using system font stack; removed Google Fonts per user preference -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#">
+        <img src="images/logo.png" alt="Verdant logo" class="logo" />
+      </a>
+      <div class="topbar-actions">
+        <nav class="nav-links">
+          <a href="#about">Giới thiệu</a>
+          <a href="#features">Tính năng</a>
+          <a href="guide.html">Hướng dẫn</a>
+          <a href="versions.html">Phiên bản</a>
+        </nav>
+        <a href="index.en.html" class="nav-lang" aria-label="English">EN</a>
+      </div>
+    </header>
+
+    <main class="page">
+      <section class="hero reveal">
+        <h1>Ngôn ngữ lập trình Lá — đơn giản, thân thiện với người Việt</h1>
+        <p class="subtitle">
+          Lá được thiết kế để giúp người mới bắt đầu hiểu và viết mã nhanh chóng bằng cú pháp đơn giản và tài liệu tiếng Việt rõ ràng.
+        </p>
+        <div class="actions">
+          <a class="button primary" href="#getting-started">Bắt đầu</a>
+        </div>
+      </section>
+
+      <section class="banner reveal" aria-label="Highlights">
+        <p>Thân thiện • Dễ học • Tập trung vào lập trình cơ bản</p>
+      </section>
+
+      <section id="about" class="grid">
+        <article class="card">
+          <h2>Tại sao chọn Lá?</h2>
+          <p>
+            Cú pháp đơn giản, tài liệu tiếng Việt rõ ràng và một bộ lệnh cơ bản giúp bạn viết chương trình thực tế ngay trong vài phút.
+          </p>
+        </article>
+        <article id="work" class="card">
+          <h2>Thiết kế cho người Việt</h2>
+          <p>
+            Từ ví dụ có chú giải bằng tiếng Việt đến lỗi dễ hiểu — Lá giảm rào cản ngôn ngữ cho người mới học.
+          </p>
+        </article>
+      </section>
+
+      <section id="features" class="grid">
+        <article class="card">
+          <h2>Tính năng chính</h2>
+          <ul>
+            <li>Cú pháp trực quan, dễ đọc</li>
+            <li>Thông báo lỗi tiếng Việt, dễ hiểu</li>
+            <li>Thư viện chuẩn nhỏ gọn cho thao tác I/O và xử lý chuỗi</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h2>Ai nên dùng?</h2>
+          <p>
+            Dành cho trẻ em muốn học cơ bản về lập trình hoặc người mới bắt đầu làm quen với máy tính.
+          </p>
+        </article>
+      </section>
+
+      <section id="getting-started" class="card reveal">
+        <h2>Bắt đầu</h2>
+        <p>Ví dụ nhỏ — in ra lời chào bằng Lá:</p>
+        <pre><code>// file: hello.la
+in "Xin chào, lá!"
+</code></pre>
+        <p>
+          Tải bộ công cụ (compiler/interpreter) và chạy: <kbd>la1 hello.la</kbd>
+        </p>
+      </section>
+
+      <section id="download" class="card reveal download-card">
+        <h2>Tải xuống</h2>
+        <p>Chọn nền tảng rồi chọn bản phù hợp để cài:</p>
+
+        <div class="download-grid">
+          <div class="download-info">
+            <p class="muted">Bản hiện tại: <strong id="currentVersion">1.0.0</strong></p>
+            <p class="muted small">Khuyến nghị: bản Chính thức cho tính ổn định, bản Cộng đồng cho cập nhật nhanh.</p>
+          </div>
+
+          <div class="download-controls">
+            <div class="os-selector" role="tablist" aria-label="Chọn hệ điều hành">
+              <button class="os-btn" data-os="linux" id="osLinux">Linux</button>
+              <button class="os-btn" data-os="windows" id="osWindows">Windows</button>
+            </div>
+
+            <div class="install-actions">
+              <a id="downloadOfficialBtn" class="button primary" href="#" download>Cài bản chính thức</a>
+              <a id="downloadCommunityBtn" class="button secondary" href="#" download>Tải bản cộng đồng</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="download-split">
+          <div class="download-split-card">
+            <h3>Install</h3>
+            <p>Nhấn nút bên trên để tải bản chính thức cho hệ điều hành đã chọn.</p>
+          </div>
+          <div class="download-split-card">
+            <h3>Community (Lá Chuối)</h3>
+            <p>Đây là bản cộng đồng dành cho người muốn dùng phiên bản mới hơn, thử nghiệm nhiều hơn.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="footer">
+      <p>© <span id="year"></span> Ngôn ngữ lá</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

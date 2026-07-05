@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La — Quick guide (English)</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.en.html">
+        <img src="images/logo.png" alt="Verdant logo" class="logo" />
+      </a>
+      <div class="topbar-actions">
+        <nav class="nav-links">
+          <a href="index.en.html">Home</a>
+          <a href="guide.en.html" class="active">Guide</a>
+          <a href="versions.en.html">Versions</a>
+        </nav>
+        <a href="guide.html" class="nav-lang" aria-label="Tiếng Việt">VI</a>
+      </div>
+    </header>
+
+    <main class="page page-narrow">
+      <section class="hero reveal">
+        <h1>A simple guide to programming with La</h1>
+        <p class="subtitle">This is a very simple way to learn programming: write a little, understand quickly, and get familiar with coding logic through small examples.</p>
+      </section>
+
+      <section class="card reveal">
+        <h2>1. Install</h2>
+        <p>Download the official or community release from the homepage, unpack it, and try running a sample program.</p>
+      </section>
+
+      <section class="card reveal">
+        <h2>2. Write your first program</h2>
+        <pre><code>// hello.la
+in "Xin chào, thế giới!"
+</code></pre>
+        <p>This is the simplest program: it prints a single line of text.</p>
+      </section>
+
+      <section class="card reveal">
+        <h2>3. Run the program</h2>
+        <p>In a terminal, run:</p>
+        <pre><code>la1 hello.la</code></pre>
+      </section>
+
+      <section class="card reveal">
+        <h2>4. Things to remember</h2>
+        <ul>
+          <li>Keep each line of code short and easy to read</li>
+          <li>Learn input and output first</li>
+          <li>Try small edits and run again to learn faster</li>
+        </ul>
+      </section>
+
+      <section class="card reveal">
+        <h2>5. Common commands</h2>
+        <p>To run a program, you write commands that the interpreter understands. Here are the most common ones.</p>
+
+        <h3>5a. <code>in</code></h3>
+        <p>Print a value to the screen using <code>in ...</code>. Example:</p>
+        <pre><code>in "Xin chào, thế giới!"</code></pre>
+
+        <h3>5b. Variables</h3>
+        <p>Use variables to store data values with <code>đặt [name] = [value]</code>.</p>
+        <pre><code>đặt biến = 123
+// biến now holds 123</code></pre>
+
+        <h4>5b1. Strings</h4>
+        <p>To store text, place it in quotes.</p>
+        <pre><code>đặt chuỗi = "Xin chào, thế giới!"
+// chuỗi now holds "Xin chào, thế giới!"</code></pre>
+
+        <h4>5b2. Numbers</h4>
+        <p>To store a number, assign it directly.</p>
+        <pre><code>đặt số = 123
+// số now holds 123</code></pre>
+
+        <h4>5b3. Lists</h4>
+        <p>To store a list, place values inside square brackets.</p>
+        <pre><code>đặt danh_sách = [1, 2, 3, 4, 5]
+// danh_sách now holds [1, 2, 3, 4, 5]</code></pre>
+
+        <h3>5c. Events</h3>
+        <p>Event commands usually define functions, loops, or conditions and often end with <code>kết</code>.</p>
+
+        <h4>5c1. <code>tạo</code></h4>
+        <p>Create a function with <code>tạo [function name] ... kết</code>.</p>
+        <pre><code>tạo xin_chào
+    in "Xin chào"
+kết
+
+xin_chào</code></pre>
+        <p>The text "Xin chào" will be printed from the function.</p>
+
+        <h4>5c2. <code>lặp</code></h4>
+        <p>Repeat a block of code with <code>lặp [count] ... kết</code>.</p>
+        <pre><code>lặp 5
+    in "Xin chào"
+kết</code></pre>
+        <p>You can also use <code>lặp mãi</code> for an endless loop, or <code>lặp ... đến ...</code> for conditional repetition.</p>
+
+        <h4>5c3. <code>nếu</code></h4>
+        <p>Check a condition with <code>nếu [condition] ... kết</code>.</p>
+        <pre><code>nếu 1 = 1
+    in "Điều kiện đúng"
+kết</code></pre>
+        <p>You can also use <code>nếu không</code> to handle the opposite case.</p>
+
+        <h3>5d. <code>nhập</code></h3>
+        <p>Read data from the keyboard with <code>nhập</code>.</p>
+        <pre><code>nhập "Bạn tên là gì?"</code></pre>
+        <p>The program pauses and waits for the user to type something.</p>
+
+        <h3>5e. Lists</h3>
+        <p>Lists hold multiple values. Use <code>thêm</code>, <code>xóa</code>, and <code>liệt kê</code> to manage them.</p>
+        <pre><code>đặt danh_sách = [1, 2, 3]
+thêm 4 tại danh_sách
+// danh_sách now holds [1, 2, 3, 4]
+xóa 2 tại danh_sách
+// danh_sách now holds [1, 3, 4]
+thêm 5 tại danh_sách ở 2
+// danh_sách now holds [1, 3, 5, 4]
+liệt kê danh_sách
+// list all elements in danh_sách</code></pre>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> La language</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

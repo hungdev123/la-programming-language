@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La — Releases</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.en.html">
+        <img src="images/logo.png" alt="Verdant logo" class="logo" />
+      </a>
+      <div class="topbar-actions">
+        <nav class="nav-links">
+          <a href="index.en.html">Home</a>
+          <a href="guide.en.html">Guide</a>
+          <a href="versions.en.html" class="active">Versions</a>
+        </nav>
+        <a href="versions.html" class="nav-lang" aria-label="Tiếng Việt">VI</a>
+      </div>
+    </header>
+
+    <main class="page page-narrow">
+      <section class="hero reveal">
+        <h1>Release list</h1>
+        <p class="subtitle">View releases from newest to oldest.</p>
+      </section>
+
+      <section class="card reveal">
+        <div class="version-list">
+          <article class="version-item">
+            <div>
+              <h3>1.0.0</h3>
+              <p>The first release with basic syntax and a minimal standard library.</p>
+            </div>
+            <div class="version-actions">
+              <span class="badge">Latest</span>
+              <a class="button secondary" href="https://github.com/hungdev123/la-programming-language/raw/refs/heads/main/install/la-1.0.0.zip" download>Download 1.0.0</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="community-download">
+          <h3>La Chuoi</h3>
+          <p>There is only one community build, and it updates continuously.</p>
+          <a class="button primary" href="#" download>Download community build</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Lá language</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

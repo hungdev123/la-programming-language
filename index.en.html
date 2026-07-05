@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>la — A friendly programming language (English)</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.en.html">
+        <img src="images/logo.png" alt="Verdant logo" class="logo" />
+      </a>
+      <div class="topbar-actions">
+        <nav class="nav-links">
+          <a href="#about">About</a>
+          <a href="#features">Features</a>
+          <a href="guide.en.html">Guide</a>
+          <a href="versions.en.html">Versions</a>
+        </nav>
+        <a href="index.html" class="nav-lang" aria-label="Tiếng Việt">VI</a>
+      </div>
+    </header>
+
+    <main class="page">
+      <section class="hero reveal">
+        <h1>La — a simple, beginner-friendly programming language</h1>
+        <p class="subtitle">
+          La is designed to help beginners learn programming quickly with clear syntax and easy-to-follow documentation.
+        </p>
+        <div class="actions">
+          <a class="button primary" href="#getting-started">Get Started</a>
+        </div>
+      </section>
+
+      <section class="banner reveal" aria-label="Highlights">
+        <p>Friendly • Easy to learn • Focused on core programming</p>
+      </section>
+
+      <section id="about" class="grid">
+        <article class="card">
+          <h2>Why choose La?</h2>
+          <p>
+            Its simple syntax, clear examples, and compact standard tools let you write real programs in just a few minutes.
+          </p>
+        </article>
+        <article id="work" class="card">
+          <h2>Designed for learners</h2>
+          <p>
+            From annotated examples to easy-to-read errors, La lowers the language barrier for new programmers.
+          </p>
+        </article>
+      </section>
+
+      <section id="features" class="grid">
+        <article class="card">
+          <h2>Main features</h2>
+          <ul>
+            <li>Readable and intuitive syntax</li>
+            <li>Friendly, easy-to-understand error messages</li>
+            <li>A small standard library for I/O and string handling</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h2>Who is it for?</h2>
+          <p>
+            Young learners and beginners who want a gentle introduction to programming and computer concepts.
+          </p>
+        </article>
+      </section>
+
+      <section id="getting-started" class="card reveal">
+        <h2>Getting started</h2>
+        <p>A small example — print a greeting with La:</p>
+        <pre><code>// file: hello.la
+in "Hello, la!"
+</code></pre>
+        <p>
+          Download the tools and run: <kbd>la1 hello.la</kbd>
+        </p>
+      </section>
+
+      <section id="download" class="card reveal download-card">
+        <h2>Download</h2>
+        <p>Select your platform and choose the version that fits your setup:</p>
+
+        <div class="download-grid">
+          <div class="download-info">
+            <p class="muted">Current release: <strong id="currentVersion">1.0.0</strong></p>
+            <p class="muted small">Official builds are recommended for stability, while Community builds are for newer features and experimentation.</p>
+          </div>
+
+          <div class="download-controls">
+            <div class="os-selector" role="tablist" aria-label="Select operating system">
+              <button class="os-btn" data-os="linux" id="osLinux">Linux</button>
+              <button class="os-btn" data-os="windows" id="osWindows">Windows</button>
+            </div>
+
+            <div class="install-actions">
+              <a id="downloadOfficialBtn" class="button primary" href="#" download>Official</a>
+              <a id="downloadCommunityBtn" class="button secondary" href="#" download>Community</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="download-split">
+          <div class="download-split-card">
+            <h3>Install</h3>
+            <p>Click the button above to download the official build for your selected operating system.</p>
+          </div>
+          <div class="download-split-card">
+            <h3>Community (Lá Chuối)</h3>
+            <p>This version is intended for users who want to try newer updates and experiment more freely.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="footer">
+      <p>© <span id="year"></span> La language</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Danh sách phiên bản lá</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html">
+        <img src="images/logo.png" alt="Verdant logo" class="logo" />
+      </a>
+      <div class="topbar-actions">
+        <nav class="nav-links">
+          <a href="index.html">Trang chủ</a>
+          <a href="guide.html">Hướng dẫn</a>
+          <a href="versions.html" class="active">Phiên bản</a>
+        </nav>
+        <a href="versions.en.html" class="nav-lang" aria-label="English">EN</a>
+      </div>
+    </header>
+
+    <main class="page page-narrow">
+      <section class="hero reveal">
+        <h1>Danh sách phiên bản</h1>
+        <p class="subtitle">Xem các bản phát hành từ mới nhất đến cũ nhất.</p>
+      </section>
+
+      <section class="card reveal">
+        <div class="version-list">
+          <article class="version-item">
+            <div>
+              <h3>1.0.0</h3>
+              <p>Phiên bản đầu tiên với cú pháp cơ bản và thư viện tối thiểu.</p>
+            </div>
+            <div class="version-actions">
+              <span class="badge">Mới nhất</span>
+              <a class="button secondary" href="https://github.com/hungdev123/la-programming-language/raw/refs/heads/main/install/la-1.0.0.zip" download>Tải 1.0.0</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="community-download">
+          <h3>Bản Lá Chuối</h3>
+          <p>Chỉ có một bản cộng đồng duy nhất, nhiều tính năng mới.</p>
+          <a class="button primary" href="#" download>Tải bản cộng đồng</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Ngôn ngữ lá</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
