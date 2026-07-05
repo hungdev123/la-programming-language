@@ -1,2 +1,3 @@
 v1.0.0
-download=
+download=https://github.com/hungdev123/la-programming-language/raw/refs/heads/main/install/la-1.0.0.zip
+support: Linux/MacOS/Unix-Based
