@@ -1,8 +1,9 @@
 # Lá - A programming language for Vietnamese
 ## [   Tiếng Việt   ]
 
-Lá là 1 ngôn ngữ lập trình nhỏ do cá nhân tạo ra. Đây là 1 ngôn ngữ lập trình sử dụng từ khóa Tiếng Việt để viết code. 
-Ngôn ngữ lập trình này phù hợp cho mọi lứa tuổi, phù hợp cho ai muốn học nâng cao sau này.
+Lá là 1 ngôn ngữ lập trình nhỏ dựa trên Rust do cá nhân tạo ra. Đây là 1 ngôn ngữ lập trình sử dụng từ khóa Tiếng Việt để viết code. 
+Ngôn ngữ lập trình này phù hợp cho mọi lứa tuổi, phù hợp cho ai muốn học nâng cao sau này. 
+Ngoài ra cũng có 1 phiên bản khác gọi là Lá Chuối, nó được thiết kế để lập trình nâng cao, sử dụng từ khóa Tiếng Anh và do cộng đồng phát triển.
 
 
 ### Hướng dẫn cơ bản
